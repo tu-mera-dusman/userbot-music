@@ -84,7 +84,7 @@ USERBOT_REPO = f"""{emoji.ROBOT} **Telegram Voice Chat UserBot**
 
 main_filter = (filters.group
                & filters.text
-               & ~filters.update.edited
+               & ~filters.edited
                & ~filters.via_bot)
 self_or_contact_filter = filters.create(
     lambda _, __, message:
