@@ -1,11 +1,9 @@
 from os import environ
-
-# import logging
 from pyrogram import Client, idle
 
 API_ID = int(environ["API_ID"])
 API_HASH = environ["API_HASH"]
-SESSION_NAME = environ["SESSION_NAME"]
+SESSION_STRING = environ["SESSION_STRING"]  # Corrected variable name
 
 PLUGINS = dict(
     root="plugins",
@@ -16,8 +14,8 @@ PLUGINS = dict(
     ]
 )
 
-app = Client(SESSION_NAME, API_ID, API_HASH, plugins=PLUGINS)
-# logging.basicConfig(level=logging.INFO)
+app = Client("userbot", session_string=SESSION_STRING, api_id=API_ID, api_hash=API_HASH, plugins=PLUGINS)
+
 app.start()
 print('>>> USERBOT STARTED')
 idle()
