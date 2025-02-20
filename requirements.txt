@@ -1,6 +1,7 @@
-Pyrogram
-TgCrypto
-ffmpeg-python
-psutil
+pyrogram
 pytgcalls
-wheel
+yt-dlp
+tgcrypto
+speedtest-cli
+ffprobe
+httpx
