@@ -1,38 +1,3 @@
-"""
-tg-vc-userbot, Telegram Voice Chat Userbot
-Copyright (C) 2021  Zaute Km
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU Affero General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU Affero General Public License for more details.
-
-You should have received a copy of the GNU Affero General Public License
-along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
-Play and Control Audio playing in Telegram Voice Chat
-
-Dependencies:
-- ffmpeg
-
-Required group admin permissions:
-- Delete messages
-- Manage voice chats (optional)
-
-How to use:
-- Start the userbot
-- send !join to a voice chat enabled group chat
-  from userbot account itself or its contacts
-- reply to an audio with /play to start playing
-  it in the voice chat, every member of the group
-  can use the !play command now
-- check !help for more commands
-"""
 import asyncio
 import os
 from datetime import datetime, timedelta
